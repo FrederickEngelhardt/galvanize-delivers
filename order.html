@@ -18,20 +18,28 @@
     <link rel='stylesheet' href='css/styles.css'>
   </head>
   <body>
-    <div id="top-navbar" class="navbar-fixed blue darken-3">
-      <div id="topLeft" class="left-align white-text"><h5>Galvanize Delivers</h2></div>
-      <div id="topRight" class="right-align white-text"><h5>Order Delivery</h2></div>
-    </div>
+    <nav>
+   <div class="nav-wrapper blue darken-3">
+     <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="#">Order Delivery</a></li>
+     </ul>
+     <ul class="side-nav" id="mobile-demo">
+       <li><a href="index.html">Home</a></li>
+     </ul>
+   </div>
+ </nav>
 
       <div class="container">
         <div class="row">
           <div class="col l8 m12 s12">
             <div class="row">
               <div class="col">
-                <h1>Menu</h1>
+                <h5>Menu</h5>
               </div>
             </div>
-
+<!-- ROW 1 for items starts here -->
             <div class="row">
               <div class="col l6 s12 m6">
                 <div class="card">
@@ -40,15 +48,15 @@
                       <span class="card-title"></span>
                   </div>
                       <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <h5>Royale with Cheese</h5>
+                        <p>$8.99</p>
                       </div>
                       <div id="burger" class="card-action">
                       <a href="#">Add to order</a>
                       </div>
                     </div>
                   </div>
-                </div>
+
   <div class="col l6 s12 m6">
     <div class="card">
       <div class="card-image">
@@ -56,14 +64,18 @@
         <span class="card-title"></span>
       </div>
       <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
+        <h5>Ice Cream Biscut</h5>
+        <p>$7.99</p>
       </div>
       <div id="iceCream" class="card-action">
         <a href="#">Add to order</a>
       </div>
     </div>
   </div>
+</div>
+  <!-- ROW 1 ends here -->
+
+  <!-- Row 2 starts here -->
 <div class="row">
   <div class="col l6 s12 m6">
     <div class="card">
@@ -72,16 +84,14 @@
         <span class="card-title"></span>
       </div>
       <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
+        <h5>Smoked Swine</h5>
+        <p>$14.99</p>
       </div>
       <div id="ribs" class="card-action">
         <a href="#">Add to order</a>
       </div>
     </div>
   </div>
-</div>
-<div class="row">
   <div class="col l6 s12 m6">
     <div class="card">
       <div class="card-image">
@@ -89,80 +99,111 @@
         <span class="card-title"></span>
       </div>
       <div class="card-content">
-        <h1>Arugula Pizza</h1>
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
+        <h5>Arugula Pizza</h5>
+        <p>$11.99</p>
       </div>
       <div id="pizza" class="card-action">
         <a href="#">Add to order</a>
       </div>
     </div>
   </div>
-</div>
-<!-- </div> -->
-    <div class="col l4 m12 s12">
-      <h1>Order</h1>
-      <div id="orders" class="row">
-          <table class="striped">
+  </div>
+<!-- Row 2 ends here -->
+
+<table class='striped'>
   <thead>
     <tr>
         <th>Quantity</th>
-        <th>Item Name</th>
-        <th>Item Price</th>
+        <th>Item</th>
+        <th>Price</th>
     </tr>
   </thead>
 
   <tbody id='priceTable'>
     <tr>
     </tr>
+    <tr>
+    </tr>
+
   </tbody>
   <tfoot>
-          <tr style="background-color: white">
-            <td></td>
-            <td>Subtotal</td>
-            <td id="subtotal">$0.00</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Tax</td>
-            <td id="tax">$0.00</td>
-          </tr>
-          <tr style="background-color: white">
-            <td></td>
-            <td>Total</td>
-            <td id="total">$0.00</td>
-          </tr>
-        </tfoot>
-</table>
-<div class="row">
-   <form class="col s12">
-       <div class="input-field col s6">
-         <i class="material-icons prefix">account_circle</i>
-         <input id="icon_prefix" type="text" class="validate">
-         <label for="icon_prefix">First Name</label>
-       </div>
-       <div class="input-field col s6">
-         <i class="material-icons prefix">phone</i>
-         <input id="icon_telephone" type="tel" class="validate">
-         <label for="icon_telephone">Telephone</label>
-       </div>
-       <div class="input-field col s6">
-         <i class="material-icons prefix">home</i>
-         <input id="icon_telephone" type="tel" class="validate">
-         <label for="icon_telephone">Address</label>
-       </div>
-       <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
-         <i class="material-icons right">send</i>
-       </button>
-     </div>
-   </form>
+      <tr style="background-color: white">
+              <td></td>
+                <td>Subtotal</td>
+                <td id="subtotal">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Tax</td>
+                    <td id="tax">$0.00</td>
+                  </tr>
+                  <tr style="background-color: white">
+                    <td></td>
+                    <td>Total</td>
+                    <td id="total">$0.00</td>
+                  </tr>
+                </tfoot>
+        </table>
+        </div>
+
+                      <button id="clear" class="right btn waves-effect red lighten-2 waves-light" type="clear" name="action">Clear
+                        <i class="material-icons right">clear</i>
+                      </button>
+
+               <form class="col l12 s12">
+                   <div class="input-field col l6 s12">
+                     <i class="material-icons prefix">account_circle</i>
+                     <input type="text" class="validate">
+                     <label for="icon_prefix">First Name</label>
+                   </div>
+                   <div class="input-field col l6 s12">
+                     <i class="material-icons prefix">account_circle</i>
+                     <input type="text" class="validate">
+                     <label for="icon_telephone">Last Name</label>
+                   </div>
+                   <div class="input-field col l6 s12">
+                     <i class="material-icons prefix">phone</i>
+                     <input type="tel" class="validate">
+                     <label for="icon_telephone">Telephone</label>
+                   </div>
+                   <div class="input-field col l6 s12">
+                     <i class="material-icons prefix">home</i>
+                     <input type="text" class="validate">
+                     <label for="icon_telephone">Address</label>
+                   </div>
+                   <button id="submit" class="right btn waves-effect waves-light" type="submit" name="action">Submit
+                     <i class="material-icons right">send</i>
+                   </button>
+
+               </form>
+ </div>
+ </div>
  </div>
 
-        </div>
-      </div>
-
-    </div>
-  </div>
+<!-- end the row organizer div -->
 </div>
+
+<footer class="page-footer blue darken-3">
+<div class="container">
+ <div class="row">
+   <div class="col l6 s12">
+     <h5 class="white-text">Galvanize Delivers</h5>
+     <p class="grey-text text-lighten-4">Fine Dining delivered.</p>
+   </div>
+   <div class="col l4 offset-l2 s12">
+     <h5 class="white-text">Links</h5>
+     <ul>
+       <li><a class="grey-text text-lighten-3" href="order.html">Order</a></li>
+     </ul>
+   </div>
+ </div>
+</div>
+<div class="footer-copyright">
+ <div class="container">
+ © 2017 Copyright Galvanize Delivers
+ </div>
+</div>
+</footer>
+
   </body>
 </html>

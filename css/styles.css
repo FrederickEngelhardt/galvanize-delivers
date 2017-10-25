@@ -1,0 +1,34 @@
+#top-navbar {
+  /*background: #4c4cff;*/
+  width: 100%;
+  height: 45px;
+}
+#topLeft {
+  /*background: green;*/
+  float: left;
+  padding-left: 10px;
+}
+#topRight {
+  /*background: purple;*/
+  float: right;
+  padding-right: 10px;
+}
+#lg-background {
+  display: grid;
+  background-image: url("../img/hero.jpg");
+  width: 100%;
+  height: 500px;
+}
+#slogan {
+  color: white;
+  padding-top: 160px;
+}
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.section {
+  border-bottom: 4px solid #ccc;
+}

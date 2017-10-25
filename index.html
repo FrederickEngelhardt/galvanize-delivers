@@ -18,18 +18,26 @@
     <link rel='stylesheet' href='css/styles.css'>
   </head>
   <body>
-    <div id="top-navbar" class="blue darken-3 navbar-fixed pinned">
-      <div id="topLeft" class="left-align white-text"><h5>Galvanize Delivers</h2></div>
-      <div id="topRight" class="right-align white-text"><h5>Order Delivery</h2></div>
-    </div>
-
+    <nav>
+   <div class="nav-wrapper blue darken-3">
+     <a href="#!" class="brand-logo">Galvanize Delivers</a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="order.html">Order Delivery</a></li>
+     </ul>
+     <ul class="side-nav" id="mobile-demo">
+       <li><a href="order.html">Order Delivery</a></li>
+     </ul>
+   </div>
+ </nav>
     <div id="lg-background" class="">
       <div class="center">
         <h1 id='slogan' class="center">"Fine Dining, Delivered." </h1>
-        <button id='button' class="valign-wrapper btn center-block placeOrder btn-large materialize-red">Place An Order</button> <!-- redirects-->
+        <button id='button' class="valign-wrapper btn center-block placeOrder btn-large materialize-red">
+          <a class='white-text' href='order.html'>Place An Order</a></button> <!-- redirects-->
       </div>
     </div>
-<!-- COPY PASTE BITCH -->
+
     <ul id="slide-out" class="side-nav">
     </ul>
 
@@ -49,15 +57,27 @@
       </div>
     </div>
     </div>
-    <footer>
-      <div class="bottom-nav navbar-fixed blue darken-3">
-      <div class="bottom-text">
-          <h5 class="white-text">Galvanize Delivers</h5>
-          <h5 id='slogan' class="center">"Fine Dining, Delivered." </h5>
-        </div>
+    <footer class="page-footer blue darken-3">
+   <div class="container">
+     <div class="row">
+       <div class="col l6 s12">
+         <h5 class="white-text">Galvanize Delivers</h5>
+         <p class="grey-text text-lighten-4">Fine Dining delivered.</p>
+       </div>
+       <div class="col l4 offset-l2 s12">
+         <h5 class="white-text">Links</h5>
+         <ul>
+           <li><a class="grey-text text-lighten-3" href="order.html">Order</a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+   <div class="footer-copyright">
+     <div class="container">
+     © 2017 Copyright Galvanize Delivers
+     </div>
+   </div>
+ </footer>
 
-      <div class='copyright'></div>
-      </div>
-    </footer>
   </body>
 </html>
